@@ -153,6 +153,19 @@ if 'common':
 
     nbBreeds='120'
     mdlname='resnet50Trimmed_e_120'
+        
+    weights=mdlname+'.h5'
+    
+    if not os.path.exists(weights):
+        if not os.path.exists(weights+'.zip'):
+            import requests
+            r=requests.get('http://1.x24.fr/a/'+weights+'.zip',stream=True)
+            with open(weights+'.zip','wb') as f:
+                f.write(r.raw.read())    
+                
+        p('unzip once')
+        os.system('unzip '+weights+'.zip');
+    
     load(mdlname+',raceLabel120')
     mdl=globals()[mdlname]
 
