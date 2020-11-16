@@ -18,3 +18,5 @@ based on stanford-dogs-dataset
 todo : add the original work notebook and presentation
 ---
 <center>&copy; 2020 <a href='//alpow.fr#o:mlgithub'>Alpow</a> 🗲☻</center>
+
+![visitors](https://visitor-badge.glitch.me/badge?page_id=gh:ben74:resnetDogsBreedsClassifier)
